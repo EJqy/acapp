@@ -1,4 +1,20 @@
+{% load static %}
 <head>
-	<link rel="stylesheet" href="https://cdn.acwing.com/static/jquery-ui-dist/jquery-ui.min.css">
-	<script src="https://cdn.acwing.com/static/jquery/js/jquery-3.3.1.min.js"></script>
-<head>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="{% static 'css/game.css' %}">
+	<script src="{% static 'js/dist/game.js' %}"></script>
+</head>
+
+<body style="margin: 0">
+	<div id="ac_game_12345678"></div>
+	<script>
+		$(document).ready(function(){
+			let ac_game = new AcGame();
+		});
+		console.log("Hello World!");
+	</script>
+</body>
+
+
+
